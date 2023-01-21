@@ -8,6 +8,16 @@ var _down_key = keyboard_check(ord("S"));
 var _shoot_key = mouse_check_button(mb_left);
 var _pickup_key = mouse_check_button_pressed(mb_right);
 var _swap_weapon = keyboard_check_pressed(vk_shift);
+var _pause_key = keyboard_check_pressed(vk_enter);
+
+// pause menu
+if (_pause_key) {
+	if (!instance_exists(oScreenPause)) {
+		instance_create_depth(0,0,0,oScreenPause);
+	} else {
+		instance_destroy(oScreenPause);
+	};
+};
 
 // player movement
 	// walking

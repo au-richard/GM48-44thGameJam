@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPistolBullet",
+  "name": "oDevil",
   "spriteId": {
-    "name": "sPistolBullet",
-    "path": "sprites/sPistolBullet/sPistolBullet.yy",
+    "name": "sDevil",
+    "path": "sprites/sDevil/sDevil.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oDamageEnemy",
-    "path": "objects/oDamageEnemy/oDamageEnemy.yy",
+    "name": "oEnemyParent",
+    "path": "objects/oEnemyParent/oEnemyParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
