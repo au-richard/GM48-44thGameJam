@@ -1,10 +1,14 @@
 /// @description Insert description here
 
+// pause self 
+if (ScreenPause()) {
+	exit;
+};
+
 // chase the player
 if (instance_exists(oPlayer)) {
 	dir = point_direction(x,y,oPlayer.x,oPlayer.y);
 };
-
 
 // getting the speeds
 xspd = lengthdir_x(spd, dir);
