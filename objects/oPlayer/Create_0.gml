@@ -9,6 +9,8 @@ walk_spd = 4;
 // aiming variables
 move_dir = 0;
 aim_dir = 0;
+center_y_offset = -5; // set weapon position in relation to player
+center_y = y + center_y_offset;
 
 // sprite control
 face = 3;

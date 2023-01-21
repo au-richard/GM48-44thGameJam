@@ -7,6 +7,7 @@ var _jump_key = keyboard_check(ord("W"));
 var _down_key = keyboard_check(ord("S"));
 var _shoot_key = mouse_check_button(mb_left);
 var _pickup_key = mouse_check_button_pressed(mb_right);
+var _swap_weapon = keyboard_check_pressed(vk_shift);
 
 // player movement
 	// walking
@@ -21,10 +22,7 @@ var _pickup_key = mouse_check_button_pressed(mb_right);
 	// jumping
 	if (place_meeting(x,y+1,oPlatform)) && (_jump_key) {
 		yspd = -7
-	};
-	
-	// aiming
-	aim_dir = point_direction(x, y, mouse_x, mouse_y);
+	};	
 	
 	// collisions
 		// horizontal
@@ -45,17 +43,39 @@ var _pickup_key = mouse_check_button_pressed(mb_right);
 		};	
 		y += yspd;
 		
-	// sprite control
-		// make sure player is facing correct direction
-		face = round(move_dir/90);
-		if (face == 4) {
-		 face = 0;
+// player aiming		
+ center_y = y + center_y_offset;
+ // aiming
+	aim_dir = point_direction(x, center_y, mouse_x, mouse_y);
+ 
+		
+// sprite control
+	// make sure player is facing correct direction
+	face = round(aim_dir/90);
+	if (face == 4) {
+		face = 0;
+	};
+	// animate
+	if (xspd == 0 && yspd == 0) {
+		image_index = 0;
+	};
+	// set the current sprite
+	mask_index = sPlayer;
+	sprite_index = sprite[face];
+	
+// weapons
+	//cycle through weapons
+	var _player_weapons = global.PlayerWeapons;
+	
+		if (_swap_weapon) {
+			//change the selection and wrap around
+			current_weapon++;
+			if (current_weapon >= array_length(_player_weapons)) {
+			 current_weapon = 0;
+			};
+		
+			//set the new weapon
+			weapon = _player_weapons[current_weapon];
+		
 		};
-		// animate
-		if (xspd == 0 && yspd == 0) {
-		 image_index = 0;
-		};
-		// set the current sprite
-		mask_index = sPlayer;
-		sprite_index = sprite[face];
 		
