@@ -20,7 +20,7 @@
     {"id":{"name":"sPistolBullet","path":"sprites/sPistolBullet/sPistolBullet.yy",},"order":6,},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},"order":9,},
     {"id":{"name":"sShotgunBullet","path":"sprites/sShotgunBullet/sShotgunBullet.yy",},"order":7,},
-    {"id":{"name":"Room_1","path":"rooms/Room_1/Room_1.yy",},"order":0,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -36,7 +36,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room_1","path":"rooms/Room_1/Room_1.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
