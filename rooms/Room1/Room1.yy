@@ -24,7 +24,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13B0BDB2","properties":[],"isDnd":false,"objectId":{"name":"oPistolBullet","path":"objects/oPistolBullet/oPistolBullet.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":2112.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5529A308","properties":[],"isDnd":false,"objectId":{"name":"oGreenPlayer","path":"objects/oGreenPlayer/oGreenPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":2336.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24C09051","properties":[],"isDnd":false,"objectId":{"name":"oNextLevel","path":"objects/oNextLevel/oNextLevel.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":-32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50BABEC8","properties":[],"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":2176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AB37207","properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":2400.0,},
@@ -295,7 +294,6 @@
     {"name":"inst_7B19518D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1E0EAB26","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_BCC6F6B","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_5529A308","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_24C09051","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6720047F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_472CE885","path":"rooms/Room1/Room1.yy",},
