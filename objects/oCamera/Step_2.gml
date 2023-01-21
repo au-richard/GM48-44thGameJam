@@ -8,7 +8,7 @@ var camW = camera_get_view_width(camera);
 var camH = camera_get_view_height(camera);
 
 //Panning
-if (mouse_check_button(mb_middle)) {
+if (mouse_check_button(mb_left)) {
 	var move_x = device_mouse_x_to_gui(0) - mouse_x_previous;
 	var move_y = device_mouse_y_to_gui(0) - mouse_y_previous;
 	camX -= move_x;
@@ -49,9 +49,9 @@ camera_set_view_pos(camera, camX, camY);
 camera_set_view_size(camera, camW, camH);
 
 //Screen Shake
-//x += random_range(-shake_remain, shake_remain);
-//y += random_range(-shake_remain, shake_remain);
-//shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
+x += random_range(-shake_remain, shake_remain);
+y += random_range(-shake_remain, shake_remain);
+shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 
 //Store Previous
 mouse_x_previous = device_mouse_x_to_gui(0);
