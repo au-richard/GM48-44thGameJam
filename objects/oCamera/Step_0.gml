@@ -1,13 +1,13 @@
 /// @description Update Camera
-
+/*
 //Update Destination
-/* if (instance_exists(follow)) {
+if (instance_exists(follow)) {
 	xTo = follow.x;
 	yTo = follow.y;
 	//if (follow.object_index == oPDead) {
 		//x = xTo;
 		//y = yTo;
-	//}
+	//} 
 }
 
 //Update Object Position
@@ -27,4 +27,10 @@ y += random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 
 //Update Camera View
-camera_set_view_pos(cam, x - view_w_half, y - view_h_half); */
+camera_set_view_pos(cam, x - view_w_half, y - view_h_half); 
+*/
+
+
+
+
+
