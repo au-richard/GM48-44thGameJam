@@ -2,13 +2,17 @@
 
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-key_up = keyboard_check(vk_space) || keyboard_check(ord("W"));
+key_jump = keyboard_check(vk_space) || keyboard_check(ord("W"));
 
 //Calculate Movement
-var moveVertical = key_down - key_up;
 var moveHorizontal = key_right - key_left;
 hsp = moveHorizontal * walksp;
-vsp = moveVertical * walksp;
+vsp += grv;
+
+//Jump
+if ((place_meeting(x, y + 1, oWall)) && (key_jump)) {
+	vsp = -10;
+}
 
 //Horizontal Collision
 if (place_meeting(x + hsp, y, oWall)) {
