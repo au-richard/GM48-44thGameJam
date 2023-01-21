@@ -29,7 +29,7 @@ if (_pause_key) {
 	
 	xspd += gunkick_x;
 	gunkick_x = 0;
-	yspd += gunkick_y;
+	yspd += grv + gunkick_y;
 	gunkick_y = 0;
 	
 	//get the direction		
@@ -117,11 +117,11 @@ if (_pause_key) {
 				var _bullet_inst = instance_create_depth(x + _x_offset, center_y + _y_offset, depth-100, weapon.bulletObj);
 				
 				if (current_weapon == 2) {
-					gunkick_x = lengthdir_x(5, aim_dir-180);
-					gunkick_y = lengthdir_y(5, aim_dir-180);
+					gunkick_x = lengthdir_x(8, aim_dir-180);
+					gunkick_y = lengthdir_y(8, aim_dir-180);
 				} else {
-					gunkick_x = lengthdir_x(.5, aim_dir-180); // -180 moves player opposite of aim dir
-					gunkick_y = lengthdir_y(.5, aim_dir-180);
+					gunkick_x = lengthdir_x(1.5, aim_dir-180); // -180 moves player opposite of aim dir
+					gunkick_y = lengthdir_y(2, aim_dir-180);
 				};				
 				 
 				// change the bullets direction
