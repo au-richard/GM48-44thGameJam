@@ -13,9 +13,12 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 	// walking
 	var _move_x = _right_key - _left_key;
 	var _move_y = _down_key - _jump_key;
-	xspd = _move_x * walk_spd;
-	yspd += grv;
-	
+	xspd = (_move_x * walk_spd); //+ global.gunkickx;
+	//global.gunkickx = 0;
+	yspd += grv;  //+ global.gunkickx;
+	//global.gunkickx = 0;
+
+
 	//get the direction		
 	move_dir = point_direction(0, 0, _move_x, _move_y);
 
@@ -42,7 +45,8 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 			yspd = 0;
 		};	
 		y += yspd;
-		
+
+
 // player aiming		
  center_y = y + center_y_offset;
  // aiming
@@ -81,6 +85,26 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 		// shoot the weapon
 		if (shoot_timer > 0) {
 			shoot_timer--;
+			//Adding gun kickback	
+			motion_add(point_direction(x, y, mouse_x, mouse_y) + 180, global.gunkickx);
+			
+			//hsp = -image_xscale * 4;
+			//vsp = -image_yscale * 4;
+			//global.gun_kickback(weapon);
+			
+		
+			/*if (weapon == 0) {
+				gunkickx = lengthdir_x(1.5, other.image_angle - 180);
+				gunkicky = lengthdir_y(1, other.image_angle - 180);
+			}
+			if (weapon == 1) {
+				gunkickx = lengthdir_x(2.5, other.image_angle - 180);
+				gunkicky = lengthdir_y(1, other.image_angle - 180);
+			}
+			if (weapon == 2) {
+				gunkickx = lengthdir_x(3.5, other.image_angle - 180);
+				gunkicky = lengthdir_y(2, other.image_angle - 180);
+			}*/		
 		};
 		if (_shoot_key && shoot_timer <= 0) {
 			// reset the timer
@@ -102,6 +126,7 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 				};
 			};		
 		};
+		
 		
 			
 		
