@@ -317,6 +317,7 @@
     {"name":"inst_5D7C0A9D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_20590A9A","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_13B0BDB2","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_13B0BDB2","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
