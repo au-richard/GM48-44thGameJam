@@ -4,6 +4,7 @@
   "name": "GM48-44thGameJam",
   "resources": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":3,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":4,},
@@ -16,6 +17,8 @@
     {"id":{"name":"oNextLevel","path":"objects/oNextLevel/oNextLevel.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
 =======
+=======
+>>>>>>> e452f1ce16a759358722b56071767a014cc832cd
     {"id":{"name":"oShotgunBullet","path":"objects/oShotgunBullet/oShotgunBullet.yy",},"order":2,},
     {"id":{"name":"sMachineGunBullet","path":"sprites/sMachineGunBullet/sMachineGunBullet.yy",},"order":5,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
@@ -34,7 +37,23 @@
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},"order":9,},
     {"id":{"name":"sShotgunBullet","path":"sprites/sShotgunBullet/sShotgunBullet.yy",},"order":7,},
     {"id":{"name":"Room_1","path":"rooms/Room_1/Room_1.yy",},"order":0,},
+<<<<<<< HEAD
 >>>>>>> a82aadb8fb9dd1b165c620ceddbcac1a1120dce2
+=======
+=======
+    {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":3,},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":4,},
+    {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":0,},
+    {"id":{"name":"sGreenPlayer","path":"sprites/sGreenPlayer/sGreenPlayer.yy",},"order":2,},
+    {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":0,},
+    {"id":{"name":"sNextLevel","path":"sprites/sNextLevel/sNextLevel.yy",},"order":1,},
+    {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":0,},
+    {"id":{"name":"oGreenPlayer","path":"objects/oGreenPlayer/oGreenPlayer.yy",},"order":2,},
+    {"id":{"name":"oNextLevel","path":"objects/oNextLevel/oNextLevel.yy",},"order":1,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+>>>>>>> 80399dbcb86275c10e9bf41813fbd30d5601e0af
+>>>>>>> e452f1ce16a759358722b56071767a014cc832cd
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -51,11 +70,19 @@
   },
   "RoomOrderNodes": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
 =======
     {"roomId":{"name":"Room_1","path":"rooms/Room_1/Room_1.yy",},},
 >>>>>>> a82aadb8fb9dd1b165c620ceddbcac1a1120dce2
+=======
+    {"roomId":{"name":"Room_1","path":"rooms/Room_1/Room_1.yy",},},
+=======
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+>>>>>>> 80399dbcb86275c10e9bf41813fbd30d5601e0af
+>>>>>>> e452f1ce16a759358722b56071767a014cc832cd
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
