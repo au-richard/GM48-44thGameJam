@@ -23,15 +23,21 @@ if (_pause_key) {
 	// walking
 	var _move_x = _right_key - _left_key;
 	var _move_y = _down_key - _jump_key;
-	xspd = _move_x * walk_spd;
-	yspd += grv;
+	if (place_meeting(x,y+1,oWall)){
+		xspd = _move_x * walk_spd;
+	};	
+	
+	xspd += gunkick_x;
+	gunkick_x = 0;
+	yspd += gunkick_y;
+	gunkick_y = 0;
 	
 	//get the direction		
 	move_dir = point_direction(0, 0, _move_x, _move_y);
 
 	// jumping
 	if (place_meeting(x,y+1,oWall)) && (_jump_key) {
-		yspd = -10
+		yspd = -5
 	};	
 	
 	// collisions
@@ -95,6 +101,10 @@ if (_pause_key) {
 		if (_shoot_key && shoot_timer <= 0) {
 			// reset the timer
 				shoot_timer = weapon.cooldown;
+			
+			// move the player - propulsion
+				
+				
 			// create the bullet
 			var _x_offset = lengthdir_x(weapon.length, aim_dir);
 			var _y_offset = lengthdir_x(weapon.length, aim_dir);
@@ -105,7 +115,15 @@ if (_pause_key) {
 			// create the correct number of bullets
 			for (var i = 0; i < weapon.bulletNum; i++) {
 				var _bullet_inst = instance_create_depth(x + _x_offset, center_y + _y_offset, depth-100, weapon.bulletObj);
-			
+				
+				if (current_weapon == 2) {
+					gunkick_x = lengthdir_x(5, aim_dir-180);
+					gunkick_y = lengthdir_y(5, aim_dir-180);
+				} else {
+					gunkick_x = lengthdir_x(.5, aim_dir-180); // -180 moves player opposite of aim dir
+					gunkick_y = lengthdir_y(.5, aim_dir-180);
+				};				
+				 
 				// change the bullets direction
 				with(_bullet_inst) {
 					dir = other.aim_dir - _spread/2 + _spread_div*i;

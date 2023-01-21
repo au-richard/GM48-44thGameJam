@@ -14,5 +14,5 @@ if (oPlayer.armor == 3) {
 };
 
 x = oPlayer.x;
-y = oPlayer.y - 25;
+y = oPlayer.y - 30;
 
