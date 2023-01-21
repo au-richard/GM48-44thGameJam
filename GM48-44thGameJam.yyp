@@ -29,6 +29,7 @@
     {"id":{"name":"sPistolBullet","path":"sprites/sPistolBullet/sPistolBullet.yy",},"order":6,},
     {"id":{"name":"oBat","path":"objects/oBat/oBat.yy",},"order":5,},
     {"id":{"name":"sBat","path":"sprites/sBat/sBat.yy",},"order":10,},
+    {"id":{"name":"DennyBullet","path":"sprites/DennyBullet/DennyBullet.yy",},"order":18,},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},"order":9,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":5,},
     {"id":{"name":"oScreenPause","path":"objects/oScreenPause/oScreenPause.yy",},"order":10,},
