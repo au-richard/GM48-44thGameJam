@@ -1,5 +1,6 @@
 /// @description Insert description here
 
+
 //Get Current Camera Position
 var camX = camera_get_view_x(camera);
 var camY = camera_get_view_y(camera);
@@ -14,8 +15,8 @@ if (mouse_check_button(mb_left)) {
 	camY -= move_y;
 } else {
 	//Set Target Camera Position
-	var targetX = oGreenPlayer.x - RES_W / 2;
-	var targetY = oGreenPlayer.y - RES_H / 2;
+	var targetX = oPlayer.x - RES_W / 2;
+	var targetY = oPlayer.y - RES_H / 2;
 	
 	//Clamp Target to Room Bounds
 	targetX = clamp(targetX, 0, room_width - camW);
@@ -47,13 +48,12 @@ if (wheel != 0) {
 camera_set_view_pos(camera, camX, camY);
 camera_set_view_size(camera, camW, camH);
 
+//Screen Shake
+x += random_range(-shake_remain, shake_remain);
+y += random_range(-shake_remain, shake_remain);
+shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
+
 //Store Previous
 mouse_x_previous = device_mouse_x_to_gui(0);
 mouse_y_previous = device_mouse_y_to_gui(0);
-
-
-
-
-
-
 
