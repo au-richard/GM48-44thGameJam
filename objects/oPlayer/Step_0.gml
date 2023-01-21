@@ -3,16 +3,28 @@
 // player input
 var _right_key = keyboard_check(ord("D"));
 var _left_key = keyboard_check(ord("A"));
-var _jump_key = keyboard_check_pressed(ord("W"));
+var _jump_key = keyboard_check(ord("W"));
 var _down_key = keyboard_check(ord("S"));
 var _shoot_key = mouse_check_button(mb_left);
 var _pickup_key = mouse_check_button_pressed(mb_right);
 
 // player movement
 	// walking
-	var _move = _right_key - _left_key;
-	xspd = _move * walk_spd;
+	var _move_x = _right_key - _left_key;
+	var _move_y = _down_key - _jump_key;
+	xspd = _move_x * walk_spd;
 	yspd += grv;
+	
+	//get the direction		
+	move_dir = point_direction(0, 0, _move_x, _move_y);
+
+	// jumping
+	if (place_meeting(x,y+1,oPlatform)) && (_jump_key) {
+		yspd = -7
+	};
+	
+	// aiming
+	aim_dir = point_direction(x, y, mouse_x, mouse_y);
 	
 	// collisions
 		// horizontal
@@ -32,8 +44,18 @@ var _pickup_key = mouse_check_button_pressed(mb_right);
 			yspd = 0;
 		};	
 		y += yspd;
-
-	// jumping
-	if (place_meeting(x,y+1,oPlatform)) && (_jump_key) {
-		yspd = -7
-	};
+		
+	// sprite control
+		// make sure player is facing correct direction
+		face = round(move_dir/90);
+		if (face == 4) {
+		 face = 0;
+		};
+		// animate
+		if (xspd == 0 && yspd == 0) {
+		 image_index = 0;
+		};
+		// set the current sprite
+		mask_index = sPlayer;
+		sprite_index = sprite[face];
+		
