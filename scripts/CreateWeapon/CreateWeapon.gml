@@ -16,7 +16,7 @@ global.PlayerWeapons = array_create(0);
 global.WeaponList = {	
 	pistol: new CreateWeapon(
 		sPistol,
-		sprite_get_bbox_right(sPistol),
+		4,
 		oPistolBullet,
 		10,
 		1,
@@ -24,7 +24,7 @@ global.WeaponList = {
 	),
 	machineGun: new CreateWeapon(
 		sMachineGun,
-		sprite_get_bbox_right(sMachineGun),
+		4,
 		oMachineGunBullet,
 		3,
 		1,
@@ -32,10 +32,10 @@ global.WeaponList = {
 	),	
 	shotgun: new CreateWeapon(
 		sShotgun,
-		sprite_get_bbox_right(sShotgun),
+		4,
 		oShotgunBullet,
 		20,
-		7,
-		80		
+		5,
+		45		
 	),	
 }
