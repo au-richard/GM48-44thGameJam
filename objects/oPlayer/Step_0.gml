@@ -20,14 +20,14 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 	move_dir = point_direction(0, 0, _move_x, _move_y);
 
 	// jumping
-	if (place_meeting(x,y+1,oPlatform)) && (_jump_key) {
+	if (place_meeting(x,y+1,oWall)) && (_jump_key) {
 		yspd = -7
 	};	
 	
 	// collisions
 		// horizontal
-		if (place_meeting(x+xspd,y,oPlatform)) {
-			while (!place_meeting(x+sign(xspd),y,oPlatform)) {
+		if (place_meeting(x+xspd,y,oWall)) {
+			while (!place_meeting(x+sign(xspd),y,oWall)) {
 				x += sign(xspd);
 			};
 			xspd = 0;
@@ -35,8 +35,8 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 		x += xspd;
 		
 		// vertical
-		if (place_meeting(x,y+yspd, oPlatform)) {
-			while (!place_meeting(x,y+sign(yspd),oPlatform)) {
+		if (place_meeting(x,y+yspd, oWall)) {
+			while (!place_meeting(x,y+sign(yspd),oWall)) {
 				y += sign(yspd);
 			};
 			yspd = 0;
