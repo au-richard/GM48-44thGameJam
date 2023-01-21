@@ -10,14 +10,13 @@ var camH = camera_get_view_height(camera);
 if (mouse_check_button(mb_left)) {
 	var move_x = device_mouse_x_to_gui(0) - mouse_x_previous;
 	var move_y = device_mouse_y_to_gui(0) - mouse_y_previous;
-	
 	camX -= move_x;
 	camY -= move_y;
 } else {
 	//Set Target Camera Position
-	var targetX = oPlayer.x - RES_W / 2;
-	var targetY = oPlayer.y - RES_H / 2;
-
+	var targetX = oGreenPlayer.x - RES_W / 2;
+	var targetY = oGreenPlayer.y - RES_H / 2;
+	
 	//Clamp Target to Room Bounds
 	targetX = clamp(targetX, 0, room_width - camW);
 	targetY = clamp(targetY, 0, room_height - camH);

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPlayer",
+  "name": "oGreenPlayer",
   "spriteId": {
-    "name": "sPlayer",
-    "path": "sprites/sPlayer/sPlayer.yy",
+    "name": "sGreenPlayer",
+    "path": "sprites/sGreenPlayer/sGreenPlayer.yy",
   },
   "solid": false,
   "visible": true,
