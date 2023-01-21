@@ -3,14 +3,19 @@
   "resourceVersion": "1.6",
   "name": "GM48-44thGameJam",
   "resources": [
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
+    {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":0,},
+    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":2,},
+    {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":0,},
+    {"id":{"name":"sNextLevel","path":"sprites/sNextLevel/sNextLevel.yy",},"order":1,},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":2,},
+    {"id":{"name":"oNextLevel","path":"objects/oNextLevel/oNextLevel.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
-    {"name":"Linux","path":"options/linux/options_linux.yy",},
-    {"name":"macOS","path":"options/mac/options_mac.yy",},
   ],
   "defaultScriptType": 0,
   "isEcma": false,
@@ -20,6 +25,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
