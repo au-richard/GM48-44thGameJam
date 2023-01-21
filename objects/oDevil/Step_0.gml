@@ -1,10 +1,5 @@
 /// @description Insert description here
 
-// pause self 
-if (ScreenPause()) {
-	exit;
-};
-
 // chase the player
 if (instance_exists(oPlayer)) {
 	dir = point_direction(x,y,oPlayer.x,oPlayer.y);
@@ -37,11 +32,6 @@ y += yspd;
 
 
 
-
-
 // Inherit the parent event
-// getting damaged and dying
 event_inherited();
-
-
 

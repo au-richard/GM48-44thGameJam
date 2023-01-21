@@ -3,8 +3,10 @@
 // movement variables
 xspd = 0;
 yspd = 0;
-grv = .1;
+grv = 0.1;
 walk_spd = 4;
+
+armor = 0;
 
 // aiming variables
 move_dir = 0;
@@ -23,6 +25,8 @@ sprite[3] = sPlayer; // down
 // weapons
 	shoot_timer = 0;
 	shoot_cooldown = 0;	
+	gunkick_x = 0;
+	gunkick_y = 0;
 	//add weapons to player weapon inv
 		array_push(global.PlayerWeapons, global.WeaponList.pistol);
 		array_push(global.PlayerWeapons, global.WeaponList.machineGun);
