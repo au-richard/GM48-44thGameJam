@@ -6,10 +6,6 @@
   "volume": 1.0,
   "parentRoom": null,
   "views": [
-<<<<<<< HEAD
-    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
-=======
->>>>>>> 806a2683ecdd62aeaea863771580ee77e6865366
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -302,10 +298,7 @@
   "sequenceId": null,
   "roomSettings": {
     "inheritRoomSettings": false,
-<<<<<<< HEAD
-=======
 
->>>>>>> 806a2683ecdd62aeaea863771580ee77e6865366
     "Width": 865,
     "Height": 2500,
     "persistent": false,
