@@ -14,8 +14,8 @@ if (mouse_check_button(mb_left)) {
 	camY -= move_y;
 } else {
 	//Set Target Camera Position
-	var targetX = oGreenPlayer.x - RES_W / 2;
-	var targetY = oGreenPlayer.y - RES_H / 2;
+	var targetX = oPlayer.x - RES_W / 2;
+	var targetY = oPlayer.y - RES_H / 2;
 	
 	//Clamp Target to Room Bounds
 	targetX = clamp(targetX, 0, room_width - camW);

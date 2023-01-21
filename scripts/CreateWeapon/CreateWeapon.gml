@@ -16,26 +16,26 @@ global.PlayerWeapons = array_create(0);
 global.WeaponList = {	
 	pistol: new CreateWeapon(
 		sPistol,
-		sprite_get_bbox_right(sPistol),
+		4,
 		oPistolBullet,
-		3,
+		10,
 		1,
 		0
 	),
 	machineGun: new CreateWeapon(
 		sMachineGun,
-		sprite_get_bbox_right(sMachineGun),
+		4,
 		oMachineGunBullet,
-		1,
+		3,
 		1,
 		0
 	),	
 	shotgun: new CreateWeapon(
 		sShotgun,
-		sprite_get_bbox_right(sShotgun),
+		4,
 		oShotgunBullet,
-		16,
-		7,
-		80		
+		20,
+		5,
+		45		
 	),	
 }

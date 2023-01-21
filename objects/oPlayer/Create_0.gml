@@ -3,11 +3,12 @@
 // movement variables
 xspd = 0;
 yspd = 0;
-grv = 0.1;
+grv = .1;
 walk_spd = 4;
 
 // aiming variables
 move_dir = 0;
+weapon_offset_dist = 4;
 aim_dir = 0;
 center_y_offset = -5; // set weapon position in relation to player
 center_y = y + center_y_offset;
@@ -20,6 +21,8 @@ sprite[2] = sPlayerLeft;
 sprite[3] = sPlayer; // down
 
 // weapons
+	shoot_timer = 0;
+	shoot_cooldown = 0;	
 	//add weapons to player weapon inv
 		array_push(global.PlayerWeapons, global.WeaponList.pistol);
 		array_push(global.PlayerWeapons, global.WeaponList.machineGun);
