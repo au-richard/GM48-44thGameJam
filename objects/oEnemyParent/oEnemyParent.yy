@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemy",
+  "name": "oEnemyParent",
   "spriteId": {
     "name": "sEnemy",
     "path": "sprites/sEnemy/sEnemy.yy",
