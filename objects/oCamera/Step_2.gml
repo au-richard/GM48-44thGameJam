@@ -48,7 +48,7 @@ if (wheel != 0) {
 camera_set_view_pos(camera, camX, camY);
 camera_set_view_size(camera, camW, camH);
 
-//Test
+//Test Test
 //Screen Shake
 //x += random_range(-shake_remain, shake_remain);
 //y += random_range(-shake_remain, shake_remain);
