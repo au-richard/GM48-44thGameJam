@@ -21,7 +21,7 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 
 	// jumping
 	if (place_meeting(x,y+1,oWall)) && (_jump_key) {
-		yspd = -7
+		yspd = -10
 	};	
 	
 	// collisions
@@ -75,7 +75,34 @@ var _swap_weapon = keyboard_check_pressed(vk_shift);
 			};
 		
 			//set the new weapon
-			weapon = _player_weapons[current_weapon];
-		
+			weapon = _player_weapons[current_weapon];		
 		};
+		
+		// shoot the weapon
+		if (shoot_timer > 0) {
+			shoot_timer--;
+		};
+		if (_shoot_key && shoot_timer <= 0) {
+			// reset the timer
+				shoot_timer = weapon.cooldown;
+			// create the bullet
+			var _x_offset = lengthdir_x(weapon.length, aim_dir);
+			var _y_offset = lengthdir_x(weapon.length, aim_dir);
+			
+			var _spread = weapon.spread;
+			var _spread_div = _spread / weapon.bulletNum;
+			
+			// create the correct number of bullets
+			for (var i = 0; i < weapon.bulletNum; i++) {
+				var _bullet_inst = instance_create_depth(x + _x_offset, center_y + _y_offset, depth-100, weapon.bulletObj);
+			
+				// change the bullets direction
+				with(_bullet_inst) {
+					dir = other.aim_dir - _spread/2 + _spread_div*i;
+				};
+			};		
+		};
+		
+			
+		
 		
