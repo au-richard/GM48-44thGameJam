@@ -18,7 +18,7 @@ global.WeaponList = {
 		sPistol,
 		sprite_get_bbox_right(sPistol),
 		oPistolBullet,
-		3,
+		10,
 		1,
 		0
 	),
@@ -26,7 +26,7 @@ global.WeaponList = {
 		sMachineGun,
 		sprite_get_bbox_right(sMachineGun),
 		oMachineGunBullet,
-		1,
+		3,
 		1,
 		0
 	),	
@@ -34,7 +34,7 @@ global.WeaponList = {
 		sShotgun,
 		sprite_get_bbox_right(sShotgun),
 		oShotgunBullet,
-		16,
+		20,
 		7,
 		80		
 	),	
