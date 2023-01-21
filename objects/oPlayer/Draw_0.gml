@@ -6,5 +6,6 @@
 // draw weapon
 	draw_weapon();
 	
-// comment comment
+// draw hp as a number
+draw_text(x,y, string(armor));
 

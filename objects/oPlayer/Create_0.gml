@@ -6,6 +6,8 @@ yspd = 0;
 grv = .1;
 walk_spd = 4;
 
+armor = 0;
+
 // aiming variables
 move_dir = 0;
 weapon_offset_dist = 4;
