@@ -3,11 +3,11 @@
 function ScreenPause(){
 	if (instance_exists(oScreenPause)) {
 		image_speed = 0;
-		speed = 0;
+		speed = 0; // for bat
 		return true;
 	} else {
 		image_speed = 1;
-		speed = 2;
+		speed = 2; // for bat
 		return false;
 	};
 };
