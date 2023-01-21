@@ -1,4 +1,4 @@
-/// @description GUI, VArs, Menu Setup
+/// @description GUI, Vars, Menu Setup
 
 #macro SAVEFILE "Save.sav"
 
@@ -16,7 +16,7 @@ menu_committed = -1;
 menu_control = true;
 
 menu[2] = "New Game";
-menu[1] = "Continue";
+menu[1] = "Instructions";
 menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);
