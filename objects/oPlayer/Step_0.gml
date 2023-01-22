@@ -40,11 +40,11 @@ if (_pause_key) {
 			yspd = -5;
 			if (_current_face = 0) {
 				sprite_index = DennyJumpRight;
+
 			} else {
 				sprite_index = DennyJumpRight;
 				image_xscale = -1;
-			};
-			sprite_index = DennyFloatRight;
+			};			
 		};
 		
 		xspd = _move_x * walk_spd;

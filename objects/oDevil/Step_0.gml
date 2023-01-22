@@ -30,8 +30,6 @@ if (place_meeting(x,y + yspd,oWall) || place_meeting(x,y+yspd,oEnemyParent)) {
 x += xspd;
 y += yspd;
 
-
-
 // Inherit the parent event
 event_inherited();
 

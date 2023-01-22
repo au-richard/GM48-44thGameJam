@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oDevil",
   "spriteId": {
-    "name": "sDevil",
-    "path": "sprites/sDevil/sDevil.yy",
+    "name": "DennyEnemyDevilFloat",
+    "path": "sprites/DennyEnemyDevilFloat/DennyEnemyDevilFloat.yy",
   },
   "solid": false,
   "visible": true,
