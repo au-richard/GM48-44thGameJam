@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oBat",
   "spriteId": {
-    "name": "sBat",
-    "path": "sprites/sBat/sBat.yy",
+    "name": "DennyEnemyBatFlying",
+    "path": "sprites/DennyEnemyBatFlying/DennyEnemyBatFlying.yy",
   },
   "solid": false,
   "visible": true,
