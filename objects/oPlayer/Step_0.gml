@@ -24,6 +24,29 @@ if (_pause_key) {
 	var _move_x = _right_key - _left_key;
 	var _move_y = _down_key - _jump_key;
 	if (place_meeting(x,y+1,oWall)){
+		// make sure player is facing correct direction
+		var _current_face = 0;
+		if (_right_key) {
+		 sprite_index = DennyMoveRight;
+		 _current_face = 0;			
+		} else if (_left_key) {
+		 sprite_index = DennyMoveLeft;
+		 _current_face = 1;
+		} else {
+			sprite_index = sprite[_current_face];
+		}
+		// jumping		
+		if (place_meeting(x,y+1,oWall)) && (_jump_key) {
+			yspd = -5;
+			if (_current_face = 0) {
+				sprite_index = DennyJumpRight;
+			} else {
+				sprite_index = DennyJumpRight;
+				image_xscale = -1;
+			};
+			sprite_index = DennyFloatRight;
+		};
+		
 		xspd = _move_x * walk_spd;
 	};	
 	
@@ -35,10 +58,7 @@ if (_pause_key) {
 	//get the direction		
 	move_dir = point_direction(0, 0, _move_x, _move_y);
 
-	// jumping
-	if (place_meeting(x,y+1,oWall)) && (_jump_key) {
-		yspd = -5
-	};	
+	
 	
 	// collisions
 		// horizontal
@@ -66,18 +86,20 @@ if (_pause_key) {
  
 		
 // sprite control
+if (!place_meeting(x,y+1, oWall) && !_jump_key) {
 	// make sure player is facing correct direction
-	face = round(aim_dir/90);
-	if (face == 4) {
+	// set the current sprite		
+	sprite_index = sprite[face];
+	face = round(aim_dir/180);
+	if (face == 2) {
 		face = 0;
 	};
+};
 	// animate
 	if (xspd == 0 && yspd == 0) {
 		image_index = 0;
 	};
-	// set the current sprite
-	mask_index = sPlayer;
-	sprite_index = sprite[face];
+	
 	
 // weapons
 	//cycle through weapons

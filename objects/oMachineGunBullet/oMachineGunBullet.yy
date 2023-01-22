@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oMachineGunBullet",
   "spriteId": {
-    "name": "sMachineGunBullet",
-    "path": "sprites/sMachineGunBullet/sMachineGunBullet.yy",
+    "name": "DennyBullet",
+    "path": "sprites/DennyBullet/DennyBullet.yy",
   },
   "solid": false,
   "visible": true,

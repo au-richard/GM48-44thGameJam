@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oShield",
   "spriteId": {
-    "name": "sShield",
-    "path": "sprites/sShield/sShield.yy",
+    "name": "DennyPickupShield",
+    "path": "sprites/DennyPickupShield/DennyPickupShield.yy",
   },
   "solid": false,
   "visible": true,
