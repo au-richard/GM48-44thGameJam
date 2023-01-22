@@ -36,13 +36,9 @@ if ((menu_x > gui_width + 150) && (menu_committed != -1)) {
 	switch (menu_committed) {
 		case 2: {
 			SlideTransition(TRANS_MODE.GOTO(Room1));
-			//SlideTransition(TRANS_MODE.NEXT);
-
 		}
 		case 1: {
-			//room_goto(3);
-			//SlideTransition(TRANS_MODE.GOTO(rInstruction));
-			SlideTransition(TRANS_MODE.NEXT);
+			SlideTransition(TRANS_MODE.NEXT)
 			break;
 		}
 		case 0: {
