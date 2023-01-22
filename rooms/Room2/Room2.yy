@@ -298,8 +298,12 @@
     {"name":"inst_1A1152BC","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_66041097","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_2F5E2597","path":"rooms/Room2/Room2.yy",},
+
     {"name":"inst_286D519E","path":"rooms/Room2/Room2.yy",},
     {"name":"room2_entryPoint","path":"rooms/Room2/Room2.yy",},
+
+    {"name":"inst_2F5E2597","path":"rooms/Room2/Room2.yy",},
+
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
