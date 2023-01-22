@@ -15,8 +15,8 @@ global.PlayerWeapons = array_create(0);
 // weapons
 global.WeaponList = {	
 	pistol: new CreateWeapon(
-		sPistol,
-		4,
+		DennyArmPistol,
+		0,
 		oPistolBullet,
 		10,
 		1,
@@ -24,7 +24,7 @@ global.WeaponList = {
 	),
 	machineGun: new CreateWeapon(
 		sMachineGun,
-		4,
+		0,
 		oMachineGunBullet,
 		3,
 		1,
@@ -32,7 +32,7 @@ global.WeaponList = {
 	),	
 	shotgun: new CreateWeapon(
 		sShotgun,
-		4,
+		0,
 		oShotgunBullet,
 		20,
 		5,

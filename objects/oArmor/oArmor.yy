@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oArmor",
   "spriteId": {
-    "name": "sArmor",
-    "path": "sprites/sArmor/sArmor.yy",
+    "name": "DennyShield",
+    "path": "sprites/DennyShield/DennyShield.yy",
   },
   "solid": false,
   "visible": true,
