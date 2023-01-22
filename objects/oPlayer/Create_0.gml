@@ -1,9 +1,12 @@
 /// @description Insert description here
 
+hascontrol = true;
+enteredRoom = false;
+
 // movement variables
 xspd = 0;
 yspd = 0;
-grv = 0.1;
+grv = 0.01;
 walk_spd = 4;
 
 armor = 0;
