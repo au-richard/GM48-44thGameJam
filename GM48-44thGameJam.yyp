@@ -85,6 +85,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+>>>>>>> Stashed changes
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":10,},
