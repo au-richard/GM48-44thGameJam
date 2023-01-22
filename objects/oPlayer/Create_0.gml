@@ -16,11 +16,10 @@ center_y_offset = -5; // set weapon position in relation to player
 center_y = y + center_y_offset;
 
 // sprite control
-face = 3;
-sprite[0] = sPlayerRight;
-sprite[1] = sPlayer; // up
-sprite[2] = sPlayerLeft;
-sprite[3] = sPlayer; // down
+face = 0;
+sprite[0] = DennyFloatRight;
+sprite[1] = DennyFloatLeft;
+
 
 // weapons
 	shoot_timer = 0;
