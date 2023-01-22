@@ -18,11 +18,20 @@ if (percent == 1 || percent == 0) {
 			room_goto_next();
 			break;
 		}
+		case TRANS_MODE.PREVIOUS: {
+			if room_exists(room_previous(room)) {
+				mode = TRANS_MODE.OFF;
+				room_goto_previous();
+				break;
+			}
+		}
 		case TRANS_MODE.GOTO: {
 			mode = TRANS_MODE.INTRO;
 			room_goto(target);
 			break;
 		}
+	
+	
 		case TRANS_MODE.RESTART: {
 			game_restart();
 			break;

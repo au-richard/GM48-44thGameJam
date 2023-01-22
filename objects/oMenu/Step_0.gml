@@ -35,21 +35,15 @@ if (menu_control) {
 if ((menu_x > gui_width + 150) && (menu_committed != -1)) {
 	switch (menu_committed) {
 		case 2: {
-			SlideTransition(TRANS_MODE.NEXT);
-			break;
+			SlideTransition(TRANS_MODE.GOTO(Room1));
+			//SlideTransition(TRANS_MODE.NEXT);
+
 		}
 		case 1: {
-			if (!file_exists(SAVEFILE)) {
-				SlideTransition(TRANS_MODE.NEXT);
-			} else {
-				var file = file_text_open_read(SAVEFILE);
-				var target = file_text_read_real(file);
-				global.kills = file_text_read_real(file);
-				global.hasgun = file_text_read_real(file);
-				file_text_close(file);
-				SlideTransition(TRANS_MODE.GOTO, target);
-			}
-		break;
+			//room_goto(3);
+			//SlideTransition(TRANS_MODE.GOTO(rInstruction));
+			SlideTransition(TRANS_MODE.NEXT);
+			break;
 		}
 		case 0: {
 			game_end();
