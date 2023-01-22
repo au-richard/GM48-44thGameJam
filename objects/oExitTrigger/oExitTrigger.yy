@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oNextLevel",
+  "name": "oExitTrigger",
   "spriteId": {
-    "name": "sNextLevel",
-    "path": "sprites/sNextLevel/sNextLevel.yy",
+    "name": "sExitTrigger",
+    "path": "sprites/sExitTrigger/sExitTrigger.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,10 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+  "eventList": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetInstance","varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetRoom","varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMRoom",
+      ],},
   ],
-  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
