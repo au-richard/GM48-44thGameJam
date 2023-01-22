@@ -1,4 +1,4 @@
 /// @description Back To Main Menu
-PreviousRoom();
+SlideTransition(TRANS_MODE.GOTO(rMenu));
 
 //SlideTransition(TRANS_MODE.PREVIOUS);
