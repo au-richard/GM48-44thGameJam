@@ -70,6 +70,7 @@
     {"id":{"name":"oNextLevel","path":"objects/oNextLevel/oNextLevel.yy",},"order":1,},
     {"id":{"name":"oDamageEnemy","path":"objects/oDamageEnemy/oDamageEnemy.yy",},"order":6,},
     {"id":{"name":"sTilesUnderground35","path":"sprites/sTilesUnderground35/sTilesUnderground35.yy",},"order":36,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
